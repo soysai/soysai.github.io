@@ -1,0 +1,127 @@
+body {
+    background: #010101;
+    align-items: center;
+    
+
+}
+.landing + .landing {
+    line-height: 0px;
+    margin-top: 150px;
+
+}
+
+h1{
+    font-family: 'Palette Mosaic', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    color:rgb(255, 192, 55);
+    margin-bottom:0px;
+    margin-top:230px;
+   line-height: 0px;
+
+}
+
+h2{
+    font-family: "lores-12";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 300px;
+    color: white;
+    margin-bottom:-150px;
+    margin-top:-12px;
+}
+p{
+ 
+    align-items: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 40;
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(255, 192, 55);
+    margin-top:100px
+}
+a.popuptext{
+    position: relative;
+    z-index:1;
+    color:rgb(255, 192, 55)
+}
+
+a.popuptext:hover{
+    z-index:1;
+}
+a.popuptext span.showDisplayOnHover{
+    display:none
+}
+
+a.popuptext:hover span.showDisplayOnHover{
+    display: block;
+    position:relative;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    top:0px;
+    Left: 0px;
+    bottom:0px;
+    width: 300px;
+    padding:10px;
+    text-align:center;
+    background-color: #ffffff;
+    opacity:90%;
+}
+.spotify {
+position:absolute;
+max-width:50px;
+height: 50px;
+padding-left:160px;
+padding-bottom:0px;
+border:none;
+background-color:transparent;
+}
+
+.folder {
+position:absolute;
+max-width:50px;
+height: 50px;
+padding-left:1000px;
+padding-top: 150px;
+padding-bottom:0px;
+border:none;
+background-color:transparent;
+}
+
+.cone {
+    max-width:50px;
+    height: 50px;
+    padding-left:1200px;
+    border:none;
+    background-color:transparent;
+    position:relative;
+    margin-top:-600px;
+}
+
+   /* a.popupvideo{
+        position: relative;
+        z-index:1;
+        color:rgb(56, 56, 56)
+    }
+    
+    a.popupvideo:hover{
+        z-index:1;
+    }
+    a.popupvideo span.video{
+        display:none
+    }
+    
+    a.popupvideo:hover span.video{
+        display: block;
+        top:0px;
+        Left: 0px;
+        bottom:0px;
+        padding:0px;
+    }
+
+.video {
+    position: absolute;
+  top: 0;
+  left: 0;
+} */
