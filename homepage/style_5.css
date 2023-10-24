@@ -23,7 +23,7 @@ body {
     display: none;
     position: absolute;
     top: 0px;
-    left: 270px;
+    left: 280px;
     z-index: 99;
 }
 .two:hover .twoplay {
@@ -37,7 +37,7 @@ body {
     display: none;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 550px;
     z-index: 99;
 }
 .three:hover .threeplay {
@@ -51,7 +51,7 @@ body {
         display: none;
         position: absolute;
         top: 0px;
-        left: 0px;
+        left: 820px;
         z-index: 99;
     }
     .four:hover .fourplay {
@@ -65,7 +65,7 @@ body {
     display: none;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 1075px;
     z-index: 99;
 }
 .five:hover .fiveplay {
@@ -78,7 +78,7 @@ body {
  .six .sixplay {
     display: none;
     position: absolute;
-    top: 0px;
+    top: 260px;
     left: 0px;
     z-index: 99;
 }
