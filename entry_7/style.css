@@ -1,0 +1,517 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000000;
+    background-image: radial-gradient(#ff0006 0.75px, #000000 0.75px);
+    background-size: 15px 15px;
+}
+h1{
+
+  font-family: "lores-12";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
+  color: #ff0000;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left:20px;
+  width: 100%;
+}
+.title{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(190, 255, 168); /* The typwriter cursor */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    white-space: nowrap;
+
+animation: 
+typing 3.5s steps(30, end);
+blink-caret .5s step-end infinite;
+
+}
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100%}
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(190, 255, 168) }
+  }
+.dropdown{
+    margin-left:-50px;
+    position:absolute;
+    margin-top:100px;
+    border:none;
+    background: none;
+}
+.dropdown .activated {
+    display: none;
+    position: absolute;
+    left: 150px;
+    z-index: 99;
+}
+.dropdown:hover .activated{
+    display: inline;
+}
+.dropdown:hover .deactivated{
+  opacity: 0%;
+}
+.dropdown {animation: shaking 0.5s infinite;}
+@keyframes shaking {
+   0% {transform: rotate(0deg);}
+   20% {transform: rotate(-4deg);}
+   50% {transform: rotate(0deg);}
+   70% {transform: rotate(4deg);}
+   100% {transform: rotate(0deg);}
+ }
+ .dropdown:hover {
+animation-play-state: paused;
+ }
+
+ .container {
+    margin-left:50px;
+    margin-top:300px;
+    position:absolute;
+    border:none;
+    background: none;
+ }
+ .container1 {
+    overflow: hidden;
+    background: none;
+    font-family: "lores-12";
+    color: rgb(249, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 500px;
+    perspective: 800px;
+  }
+  
+  .card1:hover {
+    transform: rotateY(180deg); 
+    cursor: pointer;
+  }
+  
+  .card1 {
+    height: 70%;
+    width: 70%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front1,
+  .back1 {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front1 {
+    border-radius: 2rem;
+  }
+  
+  .back1 {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+
+  .container2 {
+    overflow: hidden;
+    background: none;
+    font-family: "lores-12";
+    color: rgb(249, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+    margin-left:370px;
+    margin-top:500px;
+    position:absolute;
+    border:none;
+    background: none;
+  }
+  
+  .card2:hover {
+    transform: rotateY(180deg); 
+    cursor: pointer;
+  }
+  
+  .card2 {
+    height: 70%;
+    width: 70%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front2,
+  .back2 {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front2 {
+    border-radius: 2rem;
+  }
+  
+  .back2 {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+
+  .container3 {
+    overflow: hidden;
+    background: none;
+    font-family: "lores-12";
+    color: rgb(249, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+    margin-left:700px;
+    margin-top:400px;
+    position:absolute;
+    border:none;
+    background: none;
+  }
+  
+  .card3:hover {
+    transform: rotateY(180deg); 
+    cursor: pointer;
+  }
+  
+  .card3 {
+    height: 70%;
+    width: 70%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front3,
+  .back3 {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front3 {
+    border-radius: 2rem;
+  }
+  
+  .back3 {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .container4 {
+    overflow: hidden;
+    background: none;
+    font-family: "lores-12";
+    color: rgb(249, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+    margin-left:1050px;
+    margin-top:200px;
+    position:absolute;
+    border:none;
+    background: none;
+  }
+  
+  .card4:hover {
+    transform: rotateY(180deg); 
+    cursor: pointer;
+  }
+  
+  .card4 {
+    height: 70%;
+    width: 70%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front4,
+  .back4 {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front4 {
+    border-radius: 2rem;
+  }
+  
+  .back4 {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+
+ .dropdown2 {
+  margin-left:250px;
+  margin-top:950px;
+  scale:70%;
+  position:absolute;
+  border:none;
+  background: none;
+  }
+  .dropdown2 {animation: shaking 0.5s infinite;}
+  @keyframes shaking {
+     0% {transform: rotate(0deg);}
+     20% {transform: rotate(-4deg);}
+     50% {transform: rotate(0deg);}
+     70% {transform: rotate(4deg);}
+     100% {transform: rotate(0deg);}
+   }
+   .dropdown2:hover {
+  animation-play-state: paused;
+   }
+  
+ .obsession{
+    margin-left:700px;
+    position:absolute;
+    scale:70%;
+    margin-top:1050px;
+    border:none;
+    background: none;
+}
+
+.obsession2{
+  margin-left:-130px;
+  position:absolute;
+  scale:70%;
+  margin-top:1200px;
+  border:none;
+  background: none;
+}
+.obsession3{
+  margin-left:550px;
+  position:absolute;
+  scale:70%;
+  margin-top:1350px;
+  border:none;
+  background: none;
+}
+
+.obsession4 {
+  overflow: hidden;
+  font-family: "lores-12";
+  color: rgb(255, 255, 255);
+  font-size:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 700px;
+  perspective: 800px;
+  margin-left: 10px;
+  position:absolute;
+  scale:90%;
+  margin-top:1500px;
+  position:absolute;
+  border:none;
+  background: none;
+
+}
+
+.how:hover {
+  transform: rotateY(180deg); 
+  cursor: pointer;
+}
+
+.how {
+  height: 70%;
+  width: 70%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  inline-size: 600px;
+}
+
+.obsessionfront,
+.obsessionback {
+  height: 80%;
+  width: 100%;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  border-radius: 2rem;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.obsessionfront{
+  border-radius: 2rem;
+}
+
+.obsessionback {
+  background:none;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.obsession5 {
+  overflow: hidden;
+  font-family: "lores-12";
+  color: rgb(255, 255, 255);
+  font-size:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 700px;
+  perspective: 800px;
+  margin-left: 700px;
+  position:absolute;
+  scale:90%;
+  margin-top:1700px;
+  position:absolute;
+  border:none;
+  background: none;
+
+}
+
+.method:hover {
+  transform: rotateY(180deg); 
+  cursor: pointer;
+}
+
+.method {
+  height: 70%;
+  width: 70%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  inline-size: 600px;
+}
+
+.methodfront,
+.methodback {
+  height: 80%;
+  width: 100%;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  border-radius: 2rem;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.methodfront{
+  border-radius: 2rem;
+}
+
+.methodback {
+  background:none;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+#imagecontainer {
+  display: none;
+  float:left;
+  margin-left: -500px;
+  margin-top:100px;
+  scale:70%
+}
+
+#image{
+  max-width: 100%;
+  max-height: 100%;
+}
+#show-image-button{
+  z-index: 0;
+  position: absolute;
+  margin-left: 100px;
+  margin-top:-100px;
+  scale:1000%;
+  opacity:0%;
+  
+}
+.spotify {
+  position:absolute;
+  scale:70%;
+  max-height: 400px;
+  max-width:400px;
+  margin-left:300px;
+  margin-top:1900px;
+}
+.spotify:hover {animation: zoom 1s ;}
+@keyframes zoom {
+    0% {transform: scale(100%);}
+    100% {transform: scale(50%);}
+}
+  .transition {
+    opacity: 0%;
+    transition: all .5s ease
+    }
+
+.transition_active{
+    opacity: 100%;
+    transition: all .5s ease   
+}
+
+.transition2 {
+  opacity: 0%;
+  transition: all .5s ease
+  }
+
+.transition2_active{
+  opacity: 100%;
+  transition: all .5s ease   
+}
+
