@@ -103,3 +103,17 @@ body {
 .folder7:hover .folder7open {
     display: inline;
 }
+.folder8{
+    border:none;
+    background-color:transparent;
+}
+.folder8 .folder8open {
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: 1180px;
+    z-index: 99;
+}
+.folder8:hover .folder8open {
+    display: inline;
+}

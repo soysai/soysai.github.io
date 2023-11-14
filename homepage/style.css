@@ -199,6 +199,20 @@ font-size: 12px;
     color:#ffffff;
     font-size: 12px;
 }
+.archive .floppy {
+    display: none;
+    position: absolute;
+    top: -4px;
+    left: 8px;
+    z-index: 99;
+}
+.archive:hover .floppy {
+    display: inline;
+}
+.archive:hover .archives {
+    opacity: 0;
+
+}
 
 .sticker{
     max-width:50px;
