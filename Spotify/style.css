@@ -1,0 +1,193 @@
+body {
+    background: #000000;
+}
+.one{
+    border:none;
+    background-color:transparent; 
+}
+.one .oneplay {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+.one:hover .oneplay {
+    display: inline;
+}
+.two{
+    border:none;
+    background-color:transparent; 
+}
+.two .twoplay {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 280px;
+    z-index: 99;
+}
+.two:hover .twoplay {
+    display: inline;
+}
+.three{
+    border:none;
+    background-color:transparent; 
+}
+.three .threeplay {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 550px;
+    z-index: 99;
+}
+.three:hover .threeplay {
+    display: inline;
+}
+.four {
+    border:none;
+    background-color:transparent;
+    }
+    .four .fourplay {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 820px;
+        z-index: 99;
+    }
+    .four:hover .fourplay {
+        display: inline;
+    }
+.five {
+    border:none;
+    background-color:transparent;
+ }
+ .five .fiveplay {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 1075px;
+    z-index: 99;
+}
+.five:hover .fiveplay {
+    display: inline;
+}
+ .six{
+    border:none;
+    background-color:transparent;
+ }
+ .six .sixplay {
+    display: none;
+    position: absolute;
+    top: 260px;
+    left: 0px;
+    z-index: 99;
+}
+.six:hover .sixplay {
+    display: inline;
+}
+.seven{
+    border:none;
+    background-color:transparent;
+ }
+ .seven .sevenplay {
+    display: none;
+    position: absolute;
+    top: 260px;
+    left: 280px;
+    z-index: 99;
+}
+.seven:hover .sevenplay {
+    display: inline;
+}
+
+@media (max-width: 600px) {
+    body {
+        background: #ffffff;
+        width: 50%;
+    }
+    .one{
+        border:none;
+        background-color:transparent; 
+    }
+    .one .oneplay {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 99;
+    }
+    .one:hover .oneplay {
+        display: inline;
+    }
+    .two{
+        border:none;
+        background-color:transparent; 
+    }
+    .two .twoplay {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 280px;
+        z-index: 99;
+    }
+    .two:hover .twoplay {
+        display: inline;
+    }
+    .three{
+        border:none;
+        background-color:transparent; 
+    }
+    .three .threeplay {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 550px;
+        z-index: 99;
+    }
+    .three:hover .threeplay {
+        display: inline;
+    }
+    .four {
+        border:none;
+        background-color:transparent;
+        }
+        .four .fourplay {
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 820px;
+            z-index: 99;
+        }
+        .four:hover .fourplay {
+            display: inline;
+        }
+    .five {
+        border:none;
+        background-color:transparent;
+     }
+     .five .fiveplay {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 1075px;
+        z-index: 99;
+    }
+    .five:hover .fiveplay {
+        display: inline;
+    }
+     .six{
+        border:none;
+        background-color:transparent;
+     }
+     .six .sixplay {
+        display: none;
+        position: absolute;
+        top: 260px;
+        left: 0px;
+        z-index: 99;
+    }
+    .six:hover .sixplay {
+        display: inline;
+    }
+    
+}
