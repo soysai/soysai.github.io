@@ -1,0 +1,148 @@
+body {
+    background: #010101;
+    align-items: center;
+}
+
+.folder1 {
+    border:none;
+    background-color:transparent;
+    display: inline-block;
+    }
+    .folder1 .folder1open {
+        display: none;
+        position: absolute;
+        top: -2px;
+        left: 18px;
+        z-index: 99;
+    }
+    .folder1:hover .folder1open {
+        display: inline;
+    }
+    
+.folder2 {
+    border:none;
+    background-color:transparent;
+ }
+ .folder2 .folder2open {
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: 184px;
+    z-index: 99;
+}
+.folder2:hover .folder2open {
+    display: inline;
+}
+.folder3 {
+    border:none;
+    background-color:transparent;
+}
+.folder3 .folder3open {
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: 350px;
+    z-index: 99;
+}
+.folder3:hover .folder3open {
+    display: inline;
+}
+.folder4 {
+    border:none;
+    background-color:transparent;
+}
+.folder4 .folder4open {
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: 516px;
+    z-index: 99;
+}
+.folder4:hover .folder4open {
+    display: inline;
+}
+.folder5{
+    border:none;
+    background-color:transparent;
+}
+.folder5 .folder5open {
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: 682px;
+    z-index: 99;
+}
+.folder5:hover .folder5open {
+    display: inline;
+}
+.folder6{
+    border:none;
+    background-color:transparent;
+}
+.folder6 .folder6open {
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: 848px;
+    z-index: 99;
+}
+.folder6:hover .folder6open {
+    display: inline;
+}
+.folder7{
+    border:none;
+    background-color:transparent;
+}
+.folder7 .folder7open {
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: 1014px;
+    z-index: 99;
+}
+.folder7:hover .folder7open {
+    display: inline;
+}
+.folder8{
+    border:none;
+    background-color:transparent;
+}
+.folder8 .folder8open {
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: 1180px;
+    z-index: 99;
+}
+.folder8:hover .folder8open {
+    display: inline;
+}
+.folder9{
+    border:none;
+    background-color:transparent;
+}
+.folder9 .folder9open {
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: 1346px;
+    z-index: 99;
+}
+.folder9:hover .folder9open {
+    display: inline;
+}
+.folder10 {
+    border:none;
+    background-color:transparent;
+    display: inline-block;
+    }
+    .folder10 .folder10open {
+        display: none;
+        position: absolute;
+        top: 170px;
+        left: 18px;
+        z-index: 99;
+    }
+    .folder10:hover .folder10open {
+        display: inline;
+    }

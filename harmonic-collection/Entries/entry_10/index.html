@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ya boi's guide to learning languages</title>
+        <link rel ="stylesheet" href="../style/reset/css">
+        <link rel ="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/ixw1zsf.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ytn8cad.css">
+    </head>
+    <body>
+
+        <div class="title">
+            <h1>Chapter 4: Practice! 📒📂✏️⁺｡˚⋆˙✍ </h1>
+        </div> 
+
+        <!--To create a blinking banner button-->
+        <div class="blinkbtn" id="clickbtn">
+            ⚠️ Click to reveal!! ⚠️
+        </div>
+        <!--To create a random prompt generator-->
+        <section class="container" id="promptgenerator">
+            <div class="header"> Get a prompt ୧ ‧₊˚ 🍓 ⋅ ☆ </div>
+            <div class="box" id="promptbox">
+                <p id="prompt"></p>
+            </div>
+            <button class="generatebtn" id="generate">Generate prompt</button>
+        </section>
+        <!--dialogue image as always-->
+        <div class="dialogue" id="popup" onclick="scrollDown()">
+            <img src="images/popup.png">
+        </div>
+        <div class="tools" id="toolpopup">
+            <img src="images/tools.png">
+        </div>
+        <!--microphone tools-->
+        <button class="mic" id="voicerecorder">
+            <img src ="images/mic.png">
+        </button>
+        <!--notes tools-->
+        <button class ="notes" id="note">
+            <img src="images/book.png">
+        </button>
+
+        <!--creating a voice recorder-->
+        <div class="voicerecordcontainer" id="voicereccontainer">
+            <button id="startBtn" onclick="startRecording()">Start Recording</button>
+            <button id="stopBtn" onclick="stopRecording()">Stop Recording</button><br><br>
+            <p id="isRecording">Click start button to record</p>
+            <audio src="" id="audioElement" controls></audio>
+        </div>   
+        <!--creating a notes app where I can add and delete more notes as needed--> 
+        <div class="noteapp">
+            <button class="btn_add">Add Note</button>
+            <div class="wrapper">
+            <!-- <div class="note-wrapper">
+                <div class="operations">
+                <button class="btn_edit">Edit</button>
+                <button class="btn_delete">Delete</button>
+                </div>
+                <div class="main hidden"></div>
+                    <textarea></textarea>
+                </div> -->
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
