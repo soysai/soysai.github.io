@@ -185,3 +185,58 @@ animation-play-state: paused;
     transition: all .5s ease   
 }
 
+@media (max-width: 650px) {
+    h1 {
+      font-size: 2rem;
+    }
+    .intro{
+        scale: 40%;
+        margin-top:10px;
+        margin-left: -70px;
+    }   
+    .flipbook{
+        margin-top: 500px;
+        margin-left: 50px;
+        width: 40%; height:70%;
+    }
+    .subtitle{
+        margin-left: 80px;
+        margin-top: 890px;
+        font-size: 15px;
+    }
+    .vid1{
+        scale: 20%;
+        margin-left: 10px;
+        margin-top: 890px;
+    }
+    .vid2{
+        scale: 10%;
+        margin-left: -200px;
+        margin-top: 1100px;
+    }
+    .vid3{
+        scale: 10%;
+        margin-left: 10px;
+        margin-top: 1400px;
+    }
+    .vid4{
+        scale: 10%;
+        margin-left: -200px;
+        margin-top: 1700px;
+    }
+    .vid5{
+        scale: 10%;
+        margin-left: 10px;
+        margin-top: 1900px;
+    }
+    .me2 {
+        scale: 40%;
+        margin-left: 320px;
+        margin-top: 2400px;
+    }
+}
+.home{
+    background:#e60054;
+    border:dotted;
+    font-family:"lores-12"
+}

@@ -13,12 +13,17 @@ h1{
   font-family: "lores-12";
   font-weight: 700;
   font-style: normal;
-  font-size: 90px;
+  font-size: 4rem;
   color: #ff9494;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left:20px;
   width: 100%;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 .title{
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -28,7 +33,7 @@ h1{
 
 animation: 
 typing 3.5s steps(30, end);
-blink-caret .5s step-end infinite;
+blink-caret 0.5s step-end infinite;
 
 }
   /* The typing effect */
@@ -49,7 +54,12 @@ blink-caret .5s step-end infinite;
     align-items:center;
     height: 120%;
   }
-
+  @media (max-width: 500px) {
+    .box {
+      height: 20%;
+      max-width: 100%;
+    }
+  }
   .music{
     position: absolute;
     font-family:"lores-12";
@@ -63,21 +73,41 @@ blink-caret .5s step-end infinite;
     font-family:"lores-12";
     font-size:30px;
     padding-bottom: -10px;
-    margin-top: -50px;
+    margin-top: 400px;
+    margin-left:10px;
+  }
+  @media (max-width: 500px) {
+    .header {
+      font-size: 20px;
+      margin-top: 500px;
+    }
   }
   
   .track-image{
     margin-top: -40px;
   }
-
+  @media (max-width: 500px) {
+    .track-image {
+      width: 20%;
+      margin-top: -10px;
+    }
+  }
+  @media (max-width: 500px) {
+    .music-title {
+      font-size:15px;
+      margin-top: 5px;
+    }
+  }
+  
+/*pop up */
  #myBtn{
     background:none;
     height:120px;
     width:120px;
     position:relative;
     border:none;
-    top:-200px;
-    left: 100px;
+    top:100px;
+    left: -300px;
   }
   .file{
     margin-top:-1000px;
@@ -90,8 +120,8 @@ blink-caret .5s step-end infinite;
     width: 500px;
     height: 500px;
     position: absolute;
-    margin-top:-900px;
-    margin-left:100px;
+    margin-top:-500px;
+    margin-left:190px;
     display:none;
 }
 #myBtn {animation: zoom 0.5s infinite;}
@@ -104,12 +134,6 @@ blink-caret .5s step-end infinite;
 animation-play-state: paused;
  }
 
-.notes{
-    font-family:"lores-12";
-    font-size:40px;
-    font-weight:100;
-    color:black;
-}
 .popupwindow .window-bar {
     padding-left: 6px;
     padding-top: 3px;
@@ -147,139 +171,117 @@ animation-play-state: paused;
     margin: 1em;
 }
 
-/* Range slider */
-#duration-slider{
-  width:100%;
-
+/*to customize the audio look*/
+audio::-webkit-media-controls-panel {
+  background-color: #ff9f9f;
+  border-radius: 2px;
 }
-/* Buttons */
-
-
-.buttons {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-.prev{
-  .play {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 10%;
-    color: var(--white);
-    padding:5px;
+@media (max-width: 500px) {
+  audio {
+    scale: 50%;
   }
-}
-.play {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 10%;
-  color: var(--white);
-  padding:5px;
-}
-
-.play-all {
-  display: block;
-  margin: 0 auto;
-  padding: 3px;
-  cursor: pointer;
-  border: none;
-  border-radius: 3px;
-}
-
-.volume input[type="range"] {
-  margin: 0;
-}
-
-/* Volume */
-.volume {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0 1rem 0;
-}
-.volume p {
-  color: var(--white);
-  font-size: 1.4rem;
-  height: 2rem;
-  padding: 0 3px;
-  margin-right: 8px;
-}
-
-.volume i {
-  background: var(--color-sec);
-  color: var(--white);
-  font-size: 1.2rem;
-  height: 2rem;
-  padding: 0 3px;
-  margin-right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 
 /*notes app */
-/*.noteicon{
-position:relative;
-background:none;
-border:none;
-margin-top:-900px;
-margin-left:600px;
-
+.noteapp {
+  scale:80%;
+  margin-left:320px;
+  margin-top: 20px;
 }
-.noteicon {animation: zoom 0.5s infinite;}
-@keyframes zoom {
-   0% {transform: scale(100%);}
-   50% {transform: scale(99%);}
-   100% {transform: scale(100%);}
- }
-.noticon:hover {
-animation-play-state: paused;
- }*/
-
-.input-box{
-  position:relative;
-  margin-top:-300px;
-  margin-left:30px;
-  width:100%;
-  max-width:1370px;
-  min-height: 200px;
-  max-height:1000px;
-  background:#ffffff;
+@media (max-width: 500px) {
+  .noteapp {
+    scale: 50%;
+  }
+}
+.btn_add{
+  padding: 10px;
+  background-color:#ff9f9f;
+  font-family: "lores-12";
+  font-size: 18px;
+  color:black;
+  position:absolute;
+  margin-top: -500px;
+  margin-left: 150px;
+  inline-size: 100px;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .btn_add {
+    scale: 100%;
+    margin-left: 20px;
+    margin-top: -900px;
+  }
+}
+.btn_add:hover {
+  background-color: #ffffff;
+}
+.wrapper{
+  margin-top:100px;
+}
+.note-wrapper {
+  background: #fff;
+  border:none;
+  width: 410px;
+  height: 250px;
+  font-size: 15px;
+}
+.note-wrapper .operations {
+  background: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  margin-top: 100px;
+}
+.note-wrapper .operations button {
+  padding: 5px;
+  background-color:#ffffff;
+  font-family: "lores-12";
+  font-size: 15px;
+  color:black;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.note-wrapper .operations button:hover {
+  background-color: #ff9f9f;
+}
+.note-wrapper textarea {
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  width: 99%;
+  height: 350px;
+  resize: none;
+  border: none;
+}
+@media (max-width: 500px) {
+  .note-wrapper .operations button{
+    scale:80%;
+    margin-top: 30px;
+  }
+}
+.main {
   padding: 20px;
-  border-style:dotted;
-  border-width:2px;
 }
-.input-box img{
-  position:absolute;
-  width:25px;
-  bottom:10px;
-  right:10px;
-  cursor:pointer;
+.hidden {
+  display: none;
 }
 
+/*dialogue boxes*/
 .dialogue{
-  position:absolute;
-  margin-top:-900px;
-  margin-left:1000px;
+  margin-top:-1200px;
+  margin-left: 650px;
 }
-.dialogue{animation: zoom 0.5s infinite;}
-@keyframes zoom {
-   0% {transform: scale(100%);}
-   50% {transform: scale(99%);}
-   100% {transform: scale(100%);}
- }
-.dialogue:hover {
-animation-play-state: paused;
- }
 
-
+ @media (max-width: 500px) {
+  .dialogue {
+    width:90%;
+    margin-left: 200px;
+  }
+}
  .resources{
   position:absolute;
-  margin-top:-500px;
-  margin-left:10px;
-padding-right:-700px;
+  margin-top:-350px;
+  margin-left:-350px;
 
 }
 .resources{animation: zoom 0.5s infinite;}
@@ -291,3 +293,15 @@ padding-right:-700px;
 .resources:hover {
 animation-play-state: paused;
  }
+ @media (max-width: 500px) {
+  .resources {
+    width:90%;
+    margin-left: -100px;
+    margin-top: -150px;
+  }
+}
+.home{
+  background:#e60054;
+  border:dotted;
+  font-family:"lores-12"
+}

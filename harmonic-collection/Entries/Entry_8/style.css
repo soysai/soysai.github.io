@@ -12,12 +12,17 @@ h1{
   font-family: "lores-12";
   font-weight: 700;
   font-style: normal;
-  font-size: 100px;
+  font-size: 6rem;
   color: #ff0000;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left:20px;
   width: 100%;
+}
+@media (max-width: 650px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 .title{
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -51,12 +56,29 @@ blink-caret .5s step-end infinite;
     margin-top:75px;
     margin-left:50px;  
 }
+@media (max-width: 650px) {
+  #video {
+    scale: 40%;
+    margin-top:-60px;
+    margin-left:-400px;  
+    
+  }
+}
 #dropdown{
     margin-left:100px;
     position:absolute;
     margin-top:130px;
     border:none;
     background: none;
+}
+@media (max-width: 650px) {
+  #dropdown {
+    padding-bottom: 10px;
+    width: 40%; 
+    height: 20%;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
 }
 #dropdown {animation: zoom 0.5s infinite;}
 @keyframes zoom {
@@ -85,20 +107,19 @@ animation-play-state: paused;
   
   }
   
-  .description:hover {
-    transform: rotateY(180deg); 
-    cursor: pointer;
-  }
-  
   .description {
     height: 70%;
     width: 100%;
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
-    inline-size: 600px;
+    inline-size: 500px;
   }
-
+  .description:hover {
+    transform: rotateY(180deg); 
+    cursor: pointer;
+  }
+  
   .front,
   .back {
     height: 80%;
@@ -113,7 +134,7 @@ animation-play-state: paused;
     border-radius: 2rem;
     scale:100%;
   }
-  
+
   .back {
     height:400px;
     background:none;
@@ -123,7 +144,9 @@ animation-play-state: paused;
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    margin-left: -20px;
   }
+
 .title1{
     position:absolute;
     margin-left:650px;  
@@ -204,21 +227,27 @@ animation-play-state: paused;
    100% {transform: scale(100%);}
  }
 
-
-/* #popup1 {
-    position: absolute;
-    z-index: 9;
-    background:none;
-    cursor:move;
-} */
-
-/* .transition {
-    opacity: 0%;
-    transition: all .5s ease
-    }
-
-.transition_active{
-    opacity: 100%;
-    transition: all .5s ease   
+ 
+ @media (max-width: 650px) {
+  .light-hearted {
+    scale: 40%;
+    margin-left: -300px;
+  }
+  .education{
+    scale: 35%;
+    margin-left: -250px;
+  }
+  .practicearchive{
+    scale: 35%;
+    margin-left: -250px;
+  }
+  .front{
+    display: none;
+  }
 }
- */
+.home{
+  background:#e60054;
+  border:dotted;
+  font-family:"lores-12"
+}
+ 

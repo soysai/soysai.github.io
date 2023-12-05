@@ -13,12 +13,17 @@ h1{
     font-family: "lores-12";
     font-weight: 700;
     font-style: normal;
-    font-size: 90px;
+    font-size: 6rem;
     color: #ff4242;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left:20px;
     width: 100%;
+  }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 2rem;
+    }
   }
   .title{
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -75,8 +80,13 @@ blink-caret .5s step-end infinite;
   .header{
     padding-top: 50px;
     font-family: "lores-12";
-    font-size: 40px;
+    font-size: 3rem;
     font-weight:600;
+  }
+  @media (max-width: 500px) {
+    .header {
+      font-size: 2rem;
+    }
   }
 
   .box{
@@ -89,7 +99,11 @@ blink-caret .5s step-end infinite;
     margin-right:auto;
     margin-top:20px;
   }
-
+  @media (max-width: 500px) {
+    .box {
+      width: 80%;
+    }
+  }
   .generatebtn{
     padding: 10px;
     background-color:#ff4242;
@@ -106,13 +120,19 @@ blink-caret .5s step-end infinite;
 
   #prompt{
     font-family:'Courier New', Courier, monospace;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight:300;
     color: black;
     margin-top: 80px;
     margin-left:auto;
     margin-right:auto;
     inline-size:500px;
+  }
+  @media (max-width: 500px) {
+    #prompt {
+      inline-size: 250px;
+      margin-top:70px;
+    }
   }
 
   /*image popup*/
@@ -128,6 +148,12 @@ blink-caret .5s step-end infinite;
     0% {transform: scale(100%);}
     50% {transform: scale(99%);}
     100% {transform: scale(100%);}
+  }
+  @media (max-width: 500px) {
+    .dialogue {
+      scale: 30%;
+      margin-left: -40px;
+    }
   }
 
   /*tools*/
@@ -145,6 +171,13 @@ blink-caret .5s step-end infinite;
   100% {transform: scale(100%);}
 }
 
+@media (max-width: 500px) {
+  .tools {
+    scale: 30%;
+    margin-left: -270px;
+  }
+}
+
 .mic{
     scale:10%;
     background:none;
@@ -160,6 +193,12 @@ blink-caret .5s step-end infinite;
     100% {transform: scale(100%);}
 }
 
+@media (max-width: 500px) {
+  .mic {
+    scale: 7%;
+    margin-left: -470px;
+  }
+}
 .notes{
     scale:20%;
     position:absolute;
@@ -175,7 +214,12 @@ blink-caret .5s step-end infinite;
     50% {transform: scale(85%);}
     100% {transform: scale(100%);}
 }
-
+@media (max-width: 500px) {
+  .notes {
+    scale: 13%;
+    margin-left: -100px;
+  }
+}
 /*voice recording functions*/
 
 .voicerecordcontainer{
@@ -185,7 +229,13 @@ blink-caret .5s step-end infinite;
     margin-left: 490px;
     position:absolute;
 }
-
+@media (max-width: 500px) {
+  .voicerecordcontainer {
+    margin-left: 35px;
+    margin-top: 20px;
+    scale: 80%;
+  }
+}
 #startBtn{
     padding: 10px;
     background-color:#f6f6f6;
@@ -242,9 +292,17 @@ blink-caret .5s step-end infinite;
 .btn_add:hover {
     background-color: #ffa3f7;
 }
+@media (max-width: 500px) {
+  .noteapp {
+    scale:80%;
+    margin-left:320px;
+    margin-top: -20px;
+  }
+}
 .wrapper{
     margin-top:220px;
 }
+
 .note-wrapper {
     background: #fff;
     border:none;
@@ -279,9 +337,20 @@ blink-caret .5s step-end infinite;
     resize: none;
     border: none;
   }
+  @media (max-width: 500px) {
+    .note-wrapper .operations button{
+      scale:80%;
+      margin-top: 30px;
+    }
+  }
   .main {
     padding: 20px;
   }
   .hidden {
     display: none;
   }
+  .home{
+    background:#e60054;
+    border:dotted;
+    font-family:"lores-12"
+}

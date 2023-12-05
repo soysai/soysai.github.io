@@ -41,7 +41,11 @@ blink-caret .5s step-end infinite;
     from, to { border-color: transparent }
     50% { border-color: rgb(190, 255, 168) }
   }
-
+.home{
+    background:#e60054;
+    border:dotted;
+    font-family:"lores-12"
+}
 p {
     font-family:Arial, Helvetica, sans-serif;
     color: gold;
@@ -55,7 +59,7 @@ p {
 }
 .practice{
     font-family: 'Courier New', Courier, monospace;
-    float:left;
+    float: left;
     font-size: 70px;
     text-align: center;
     margin-top: -200px;
@@ -66,11 +70,10 @@ p {
     #3cb371 0%,
     #ffa500 25%,
     #ff1361 67%,
-    #fff800 100%
-    );
-    background-size:auto auto;
-    background clip: border-box;
-    background-size:200% auto;
+    #fff800 100% );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -259,3 +262,39 @@ p {
     from, to { border-color: transparent }
     50% { border-color: orange }
   }
+  @media (max-width: 650px) {
+    .floatingletters {
+      font-size: 2rem;
+    }
+    .box{
+        display: none;
+    }
+    .practice{
+        font-size: 12px;
+        margin-top: -50px;
+    }
+    .archive{
+        margin-left: 50px;
+    }
+    .title-word{
+        margin-left: 30px;
+    }
+    .power{
+        scale:50%;
+        margin-left: 100px;
+        margin-top: 700px;
+    }
+    .chicken{
+        scale: 50%;
+        margin-left: -120px;
+    }
+    .paper{
+        scale: 60%;
+        margin-right: -200px;
+        margin-top: -20px;
+    }
+    .text{
+        scale: 70%;
+        margin-right: -100px;
+    }
+}

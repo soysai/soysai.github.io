@@ -50,6 +50,11 @@ function generateRandomPrompt() {
     const randomIndex = Math.floor(Math.random() * prompts.length);
     const randomPrompt = prompts[randomIndex];
     document.getElementById("prompt").innerText = randomPrompt;
+
+    // look up Y position of desired element
+    // store Y position
+    
+    window.scrollTo(0, 400);
 }
 
 //get randomized prompts by id 

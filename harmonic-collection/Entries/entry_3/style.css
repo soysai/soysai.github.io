@@ -1,104 +1,144 @@
-body {
-    background: #010101;
-    align-items: center;
-    
+body{
 
+    justify-content: center;
+    background-color: #000000;
+    opacity: 1;
+    background-image:  linear-gradient(#545454 0.6000000000000001px, transparent 0.6000000000000001px), linear-gradient(to right, #545454 0.6000000000000001px, #000000 0.6000000000000001px);
+    background-size: 12px 12px;
 }
-.landing + .landing {
-    line-height: 0px;
-    margin-top: 150px;
-
-}
-
 h1{
-    font-family: "alta-california", sans-serif;
-    font-weight: 400;
+    font-family: "lores-12";
+    font-weight: 700;
     font-style: normal;
-    font-size: 70px;
-    color:orange;
-    margin-bottom:0px;
-    margin-top:150px;
+    font-size: 100px;
+    color: rgb(255, 200, 35);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left:20px
+}
 
+.title{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    white-space: nowrap;
+
+animation: 
+typing 3.5s steps(30, end),
+blink-caret .5s step-end infinite;
+
+}
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100%}
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+  .home{
+    background:#e60054;
+    border:dotted;
+    font-family:"lores-12"
+}
+p{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    margin-top: 40px;
 }
 
 h2{
     font-family: "lores-12";
-    font-weight: 700;
+    font-weight: 200;
     font-style: normal;
-    font-size: 300px;
+    font-size: 70px;
     color: white;
-    margin-bottom: 0px;
-    margin-top:-2px;
+    margin-bottom: 50px;
+    margin-top:50px;
 }
-p{
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 40;
-    font-style: normal;
-    font-size: 30px;
-    color: white;
-    margin-top:0px;
+.content{
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn{
+    0% {opacity:0;}
+    100%{opacity:1;}
 }
 
-/*referenced from codepen at https://codepen.io/kocsten/pen/rggjXp */
-
-
-.glow-on-hover {
-    width: 230px;
-    height: 60px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
+/*referred to https://youtu.be/N5M_A-HrpU4?si=ko-NyIOtinppcqPg for the popup! */
+a.popuptext{
     position: relative;
-    z-index: 0;
-    border-radius: 10px;
+    z-index:20;
+    color:#ffffff
 }
 
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(70deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 600%;
-    z-index: -1;
-    filter:brightness(200%);
-    filter:blur(20px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+a.popuptext:hover{
+    z-index:30;
+}
+a.popuptext span.showDisplayOnHover{
+    display:none
 }
 
-.glow-on-hover:active {
-    color: #ffbf00
+a.popuptext:hover span.showDisplayOnHover{
+    display: block;
+    position:absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    line: height 50px;
+    top:50px;
+    Left: 50px;
+    width: auto;
+    padding:100px;
+    border: none;
+    border-radius:20px;
+ background-color: #ffbf00;
+ opacity:90%;
+ color:#ffffff;
+ text-align: center;
+}
+.typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    white-space: nowrap;
+
+animation: 
+typing 3.5s steps(30, end),
+blink-caret .5s step-end infinite;
+
+}
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100%}
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+  @media (max-width: 650px) {
+    h1 {
+      font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;  
+    }
+    .image{
+        scale: 60%;
+        margin-left: -80px;
+    }
+    .showDisplayOnHover{
+        scale:40%;
+        margin-left: -350px;
+    }
 }
 
-.glow-on-hover:active:after {
-    background: transparent;
-}
-
-.glow-on-hover:hover:before {
-    opacity: 1;
-}
-
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}

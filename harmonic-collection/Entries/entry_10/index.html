@@ -2,34 +2,35 @@
 <html>
     <head>
         <title>Ya boi's guide to learning languages</title>
-        <link rel ="stylesheet" href="../style/reset/css">
         <link rel ="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/ixw1zsf.css">
         <link rel="stylesheet" href="https://use.typekit.net/ytn8cad.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
     <body>
 
-        <div class="title">
+        <div class="title" style="width:100%;">
             <h1>Chapter 4: Practice! 📒📂✏️⁺｡˚⋆˙✍ </h1>
         </div> 
+        <a class ="home" href="../index.html">Home</a>
 
         <!--To create a blinking banner button-->
-        <div class="blinkbtn" id="clickbtn">
+        <div class="blinkbtn" id="clickbtn" style="width:100%;">
             ⚠️ Click to reveal!! ⚠️
         </div>
         <!--To create a random prompt generator-->
-        <section class="container" id="promptgenerator">
+        <section class="container" id="promptgenerator" style="width:100%;">
             <div class="header"> Get a prompt ୧ ‧₊˚ 🍓 ⋅ ☆ </div>
             <div class="box" id="promptbox">
-                <p id="prompt"></p>
+                <p id="prompt" class="promptcontent"></p>
             </div>
             <button class="generatebtn" id="generate">Generate prompt</button>
         </section>
         <!--dialogue image as always-->
-        <div class="dialogue" id="popup" onclick="scrollDown()">
+        <div class="dialogue" id="popup">
             <img src="images/popup.png">
         </div>
         <div class="tools" id="toolpopup">

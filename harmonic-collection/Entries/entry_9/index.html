@@ -2,13 +2,13 @@
 <html>
     <head>
         <title>Ya boi's guide to learning languages</title>
-        <link rel ="stylesheet" href="../style/reset/css">
         <link rel ="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/ixw1zsf.css">
         <link rel="stylesheet" href="https://use.typekit.net/ytn8cad.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
     </head>
     <body>
 
@@ -16,9 +16,10 @@
             <h1>Chapter 3: Listening ‧₊˚🖇️✩ ₊˚🎧⊹♡ 
                 ˙✧˖°📷 ༘ ⋆｡˚ </h1>
         </div>
+        <a class ="home" href="../index.html">Home</a>
         <section class="main">
             <div class="container box">
-                <center><img src="images/frame.png" style="display:flex"></center>
+                <center><img class = "box" src="images/frame.png" style="display:flex"></center>
                 <div class="music">
                     <!--Music player-->
                     <div class="header" style="text-align: center;">
@@ -32,96 +33,62 @@
                         </p>
                     </div>
                     <!--audio-->
-                    <center>
-                    <audio controls id="song">
-                        <source src="./music/shinkanzen_chokai_n3_CD-A_001.mp3" type="audio/mpeg">
-                    </audio>
-                    </center>
-                    <!--Song duration-->
-                            <div class="duration">
-                             <input type="range" id="duration-slider"  value="0" />
-                            </div>
-                            <!--Buttons-->
-                            <nav>
-                                <div class="buttons">
-                                <button class="prev">
-                                    <i class="backward">⏮</i>
-                                </button>
-                                <button onclick="playPause()" class="play">
-                                    <i class="play" id="ctrlIcon">▶</i>
-                                </button>
-                                <button class="next">
-                                    <i class="forward">⏭</i>
-                                </button>
-                                </div>
-                            </nav>
-                            <!--Autoplay-->
-                            <button class="play-all">
-                                Play All <i class="fas fa-sync-alt"></i>
-                            </button>
-                            <!--Volume-->
-                            <div class="volume">
-                                <p id="show-volume">50</p>
-                                <i class="fas fa-volume-mute" id="volume-icon"></i>
-                                <input type="range" id="volume" min="0" max="100" value="50" />
-                            </div> 
-
+                        <center>
+                            <audio controls id="song">
+                                <source src="./music/shinkanzen_chokai_n3_CD-A_001.mp3" type="audio/mpeg">
+                            </audio>
+                        </center>
+                    <!--Button to trigger modal box-->
+                        <button id="myBtn"><img src="images/file.png" class="file" style="scale:5%"></button>
+                    <!--Draggable modal box for notes-->
+                        <div class="popupwindow" id="window">
+                        <div class="window-bar" id="windowbar">
+                        <div class="notes">Notes ✎﹏﹏﹏﹏</div>
+                        <span class="popupwindow-close">
+                            <svg viewport="0 0 12 12" version="1.1"
+                                width="100" height="50"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="1" y1="11"
+                                x2="11" y2="1"
+                                stroke="black"
+                                strokeWidth="2"/>
+                                <line x1="1" y1="1"
+                                x2="11" y2="11"
+                                stroke="black"
+                                strokeWidth="2"/>
+                            </svg>
+                        </span>
                         </div>
+                    <div class="popupwindow-body">
+                    <img src="images/gif.gif" class="gif" style="height:25% ;width:25%">
+                    <div class="text">
+                        Adding on to resources!<br><br>
+                        Almost every language-based exam has a listening component, ranging in difficulty, depending on one's level. I often found this part of the exams the most fun - I learn to listen, to understand and get a fun story out of the end of it. <br><br>
+                        I wrote my JLPT exams, and these are some mock audios I practiced from!<br><br>
+                        This is the perfect practice opportunity to take some notes by clicking the notes option, and play as many audios as you like! 
                     </div>
-                </div>
-            </div>
-        </section>
-        <!--Button to trigger modal box-->
-            <button id="myBtn"><img src="images/file.png" class="file" style="scale:5%"></button>
-        <!--Draggable modal box for notes-->
-        <div class="popupwindow" id="window">
-            <div class="window-bar" id="windowbar">
-                <div class="notes">Notes ✎﹏﹏﹏﹏</div>
-                <span class="popupwindow-close">
-                    <svg viewport="0 0 12 12" version="1.1"
-                         width="100" height="50"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="11"
-                              x2="11" y2="1"
-                              stroke="black"
-                              strokeWidth="2"/>
-                        <line x1="1" y1="1"
-                              x2="11" y2="11"
-                              stroke="black"
-                              strokeWidth="2"/>
-                    </svg>
-                </span>
-            </div>
-            <div class="popupwindow-body">
-                <img src="images/gif.gif" class="gif" style="height:25% ;width:25%">
-                <div class="text">
-                    Adding on to resources!<br><br>
-                    Almost every language-based exam has a listening component, ranging in difficulty, depending on one's level. I often found this part of the exams the most fun - I learn to listen, to understand and get a fun story out of the end of it. <br><br>
-                    I wrote my JLPT exams, and these are some mock audios I practiced from!<br><br>
-                    This is the perfect practice opportunity to take some notes by clicking the notes option, and play as many audios as you like! 
-                </div>
             </div>
         </div>
         <!--Notes app to take notes-->
-        <div class="containerfornote">
-  <!--      <button class="noteicon" style="scale:15%;">
-                <img src="./images/book.png">
-            </button>-->    
-            <div class="notes-container">
-                 <p contenteditable="true" class="input-box">
-                </p> 
+        <div class="noteapp">
+            <button class="btn_add">Add Note</button>
+            <div class="wrapper">
+            <!-- <div class="note-wrapper">
+                <div class="operations">
+                <button class="btn_edit">Edit</button>
+                <button class="btn_delete">Delete</button>
+                </div>
+                <div class="main hidden"></div>
+                    <textarea></textarea>
+                </div> -->
             </div>
         </div>
+        </section>
         <!--dialogue-->
-        <div class="dialogue">
-            <img src="./images/dialogue.png" style="width:100%; height:100%;">
-        </div>
-        <a href="https://drive.google.com/drive/folders/1UX-f-o6UVNEtb4xNZLYPunlDxfYN_sra?usp=drive_link">
-            <div class="resources">
-                <img src="./images/resources.png" style="width:40%; height:40%; ">
-            </div>
+        <img class="dialogue" src="./images/dialogue.png" style="scale:40%;">
+        <a href="https://drive.google.com/drive/folders/1z4hhcuZ07j7YHa6X84vbUql6pacgfktP?usp=sharing">
+                <img class ="resources" src="./images/resources.png" style="scale:40%; ">
         </a>
-        <script src="music.js" ></script>
         <script src="script.js"></script>
      </body>
 </html>

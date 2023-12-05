@@ -78,6 +78,9 @@ animation-play-state: paused;
     position:absolute;
     border:none;
     background: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
  }
  .container1 {
     overflow: hidden;
@@ -515,3 +518,61 @@ animation-play-state: paused;
   transition: all .5s ease   
 }
 
+@media (max-width: 650px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .container{
+    margin-left: -20px;
+  }
+  .container1 {
+    scale: 60%;
+    margin-top: -180px;
+    margin-left: -50px;
+  }
+  .container2{
+    scale: 60%;
+    top: -200px;
+    left: -180px;
+  }
+  .container3{
+    scale: 60%;
+    top: 100px;
+    left: -750px;
+  }
+  .container4{
+    scale: 60%;
+    top: 400px;
+    left: -850px;
+  }
+  .obsession{
+    scale: 30%;
+    margin-left:130px;
+  }
+  .obsession2{
+    scale: 30%;
+    margin-left:-350px;
+  }
+  .obsession3{
+    scale: 30%;
+    margin-left:-250px;
+  }
+  .obsession4{
+    scale: 30%;
+    margin-left:-250px;
+  }
+  .obsession5{
+    scale: 30%;
+    margin-left:-150px;
+  }
+  .spotify{
+    scale:  30%;
+    margin-left: 100px;
+    margin-top: 1600px;
+  }
+}
+.home{
+  background:#e60054;
+  border:dotted;
+  font-family:"lores-12"
+}

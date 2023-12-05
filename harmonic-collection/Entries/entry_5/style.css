@@ -734,3 +734,166 @@ transform: scale(1, 1);
     0% {opacity:0;}
     100%{opacity:1;}
 }
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .intro_image{
+    scale: 35%;
+    margin-top: -100px;
+    margin-left: -440px;
+  }
+  .introduction{
+    font-size: 15px;
+    margin-left: 200px;
+    margin-top:100px;
+    inline-size: 200px;
+  }
+  .introduction_2{
+    font-size: 15px;
+    margin-left: 100px;
+    margin-top:290px;
+    inline-size: 300px;
+  }
+  .history{
+    font-size: 15px;
+    margin-left: 200px;
+    margin-top:300px;
+    inline-size: 300px;
+    text-align: left;
+  }
+  .gk{
+    scale: 60%;
+    margin-top: 350px;
+    margin-left: -50px;
+  }
+  .gk_content{
+    font-size: 20px;
+    margin-left: 120px;
+    margin-top:500px;
+    inline-size: 250px;
+    text-align: left;
+  }
+  .postit{
+    scale: 50%;
+    margin-left:-250px;
+    margin-top: -200px;
+  }
+  .visual_cues{
+    scale:50%;
+    margin-left: -140px;
+    top:20px;
+  }
+  .chatbox{
+    scale: 60%;
+  }
+  .chat1{
+    margin-left:-120px;
+    margin-top: -400px;
+  }
+  .chat1content{
+    margin-left: -70px;
+  }
+  .chat2{
+    margin-right:-120px;
+  }
+  .chat2content{
+    margin-left:-100px;
+    margin-top:20px;
+  }
+  .chat3{
+    margin-left:-120px;
+  }
+  .chat3content{
+    margin-left: -70px;
+    margin-top: 450px;
+  }
+  .chat4{
+    margin-right:-120px;
+  }
+  .chat4content{
+    margin-left:-100px;
+    margin-top:700px;
+  }
+  .chat5{
+    margin-left:-120px;
+  }
+  .chat5content{
+    margin-left: -60px;
+    margin-top: 970px;
+  }
+  .chat6{
+    margin-right:-120px;
+  }
+  .chat6content{
+    margin-left:-100px;
+    margin-top:1225px;
+  }
+  .chat7{
+    margin-left:-150px;
+  }
+  .chat7content{
+    margin-left: -60px;
+    margin-top: 1500px;
+  }
+  .chat8{
+    margin-right:-120px;
+  }
+  .chat8content{
+    margin-left:-100px;
+    margin-top:1775px;
+  }
+  .info{
+    scale:60%;
+    margin-left: -50px;
+    top:2200px;
+  }
+  .consonants{
+    scale:60%;
+    margin-left: 30px;
+    top:2300px;
+  }
+  .funfact{
+    scale:60%;
+    margin-left: 80px;
+    top:50px;
+  }
+  .recommend{
+    scale:60%;
+    margin-left: 100px;
+    top:2000px;
+  }
+  .videoframe{
+    display:none;
+  }
+  .video{
+    scale:40%;
+    margin-left: 100px;
+    top:1600px;
+  }
+  .arrow{
+    scale:50%;
+    margin-left: 450px;
+    top:1850px;
+  }
+  .end{
+    scale:60%;
+    margin-left: -150px;
+  }
+  .enddescription{
+    scale:60%;
+    margin-left: 200px;
+    margin-top: 2450px;
+  }
+  .stroke{
+    border:none;
+    scale: 60%;
+    margin-left: 50px;
+  }
+}
+.home{
+  background:#e60054;
+  border:dotted;
+  font-family:"lores-12"
+}
