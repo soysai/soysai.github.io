@@ -350,7 +350,7 @@ blink-caret .5s step-end infinite;
     display: none;
   }
   .home{
-    background:#e60054;
+    background:#ff005d;
     border:dotted;
     font-family:"lores-12"
 }
