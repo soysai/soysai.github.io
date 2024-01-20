@@ -1,105 +1,231 @@
 body {
     background: #000000;
 }
-.one{
-    border:none;
-    background-color:transparent; 
+.playlist{
+    align-items: center;
 }
-.one .oneplay {
-    display: none;
+/*modal box */
+.notes{
+    font-family:"lores-12";
+    font-size:30px;
+    padding: 10px;
+    color:black;
+    position:relative;
+}
+.popupwindow {
+    z-index: 2;
+    border: 3px dotted #ff9494;
+    background-color:white;
+    width: 500px;
+    height: 600px;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 99;
+    margin-top:100px;
+    margin-left:190px;
 }
-.one:hover .oneplay {
-    display: inline;
+.popupwindow .window-bar {
+    padding-left: 6px;
+    padding-top: 3px;
+    cursor: move;
+    background-color: white;
 }
-.two{
-    border:none;
-    background-color:transparent; 
-}
-.two .twoplay {
-    display: none;
-    position: absolute;
-    top: 0px;
-    left: 280px;
-    z-index: 99;
-}
-.two:hover .twoplay {
-    display: inline;
-}
-.three{
-    border:none;
-    background-color:transparent; 
-}
-.three .threeplay {
-    display: none;
-    position: absolute;
-    top: 0px;
-    left: 550px;
-    z-index: 99;
-}
-.three:hover .threeplay {
-    display: inline;
-}
-.four {
-    border:none;
-    background-color:transparent;
-    }
-    .four .fourplay {
-        display: none;
-        position: absolute;
-        top: 0px;
-        left: 820px;
-        z-index: 99;
-    }
-    .four:hover .fourplay {
-        display: inline;
-    }
-.five {
-    border:none;
-    background-color:transparent;
- }
- .five .fiveplay {
-    display: none;
-    position: absolute;
-    top: 0px;
-    left: 1075px;
-    z-index: 99;
-}
-.five:hover .fiveplay {
-    display: inline;
-}
- .six{
-    border:none;
-    background-color:transparent;
- }
- .six .sixplay {
-    display: none;
-    position: absolute;
-    top: 260px;
-    left: 0px;
-    z-index: 99;
-}
-.six:hover .sixplay {
-    display: inline;
-}
-.seven{
-    border:none;
-    background-color:transparent;
- }
- .seven .sevenplay {
-    display: none;
-    position: absolute;
-    top: 260px;
-    left: 280px;
-    z-index: 99;
-}
-.seven:hover .sevenplay {
-    display: inline;
+.popupwindow-body .text{
+    font-family:"lores-12";
+    font-size:20px;
+    color:black;
+    position:relative;
+    margin-top:-50px;
 }
 
+.gif{
+    position:relative;
+    left:300px;
+    top:-10px;
+}
+
+.popupwindow .window-bar .popupwindow-close {
+    cursor: pointer;
+    display:inline-block;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: white;
+    width: 14px;
+    height: 14px;
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+.popupwindow-body {
+    margin: 1em;
+}
+
+/*playlists*/
+
+.one{
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12";
+}
+.one:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+.two{
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.two:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+.three{
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.three:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+.four {
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.four:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+.five {
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.five:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+ .six{
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.six:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+.seven{
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.seven:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+.eight{
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.eight:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+.nine{
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.nine:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+.ten{
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.ten:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+.eleven{
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.eleven:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+.twelve{
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.twelve:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+.thirteen{
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.thirteen:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+.fourteen{
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.fourteen:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
+.fifteen{
+    background:#ff77a9;
+    border:dotted;
+    font-family:"lores-12"
+}
+.fifteen:hover{
+    background:#ffffff;
+    border:dotted;
+    border-color: #ff77a9;
+    font-family:"lores-12"
+}
 @media (max-width: 600px) {
     body {
         background: #ffffff;
